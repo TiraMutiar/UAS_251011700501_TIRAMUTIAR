@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1B3C53;
+    padding: 15px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header a span {
+    color: #00bcd4; 
+}
+
+.navbar a {
+    margin-left: 25px;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00bcd4;
+    text-shadow: 0 0 5px #00bcd4;
+}
+
+/* ====== HAMBURGER MENU (buat HP/tablet) ====== */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* sembunyikan checkbox toggle */
+#menu-toggle {
+    display: none;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 900px) {
+    .header {
+        padding: 15px 30px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* navbar di mode hp */
+    .navbar {
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: #1B3C53;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .navbar a {
+        display: block;
+        margin: 15px 0;
+        font-size: 18px;
+    }
+
+    /* tampilkan menu saat toggle diklik */
+    #menu-toggle:checked ~ .navbar {
+        display: flex;
+    }
+}
+
+/* ====== HOME SECTION ====== */
+
+.home {
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px; 
+    width: 100%;
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+
+/* ====== FOTO KIRI ====== */
+.home-img img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.6);
+    transition: 0.3s ease;
+}
+
+.home-img img:hover {
+    transform: scale(1.05);
+}
+
+/* ====== TEKS KANAN ====== */
+.home .content {
+    flex: 1;
+    color: #111;
+}
+
+.home .content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.home .content h3 {
+    font-size: 24px;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+.home .content p {
+    font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* ====== BUTTON ====== */
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #00bcd4;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px #00bcd4;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #00bcd4;
+    box-shadow: 0 0 20px #00bcd4;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 900px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 30px;
+    }
+}
+
+/* FOOTER */
+.footer {
+  background: #1B3C53;        
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer p {
+  margin: 0;
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+
+.footer p:hover {
+  opacity: 1;
+}

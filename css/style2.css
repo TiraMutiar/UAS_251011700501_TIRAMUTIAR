@@ -1,0 +1,232 @@
+/* ================= ABOUT SECTION ================= */
+
+.about {
+    width: 100%;
+    padding: 50px 0;
+    background: #fff;
+}
+
+.about-judul {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #1B3C53;
+}
+
+.about-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+/* CARD KIRI */
+.about-card {
+    flex: 1;
+    background: #fff;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-left: 6px solid #00bcd4;
+}
+
+.about-card h2 {
+    font-size: 32px;
+    color: #1B3C53;
+    margin-bottom: 20px;
+}
+
+.about-card p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #444;
+    text-align: justify;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #00bcd4;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px #00bcd4;
+}
+
+.button:hover {
+    background: #fff;
+    color: #00bcd4;
+    box-shadow: 0 0 20px #00bcd4;
+}
+
+.about-card .button {
+    margin-top: 15px;
+}
+
+
+
+/* FOTO KANAN */
+.about-img img {
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.6);
+    transition: 0.3s ease;
+}
+
+.about-img img:hover {
+    transform: scale(1.04);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .about-card {
+        text-align: center;
+    }
+}
+
+/* ====== SERVICES SECTION ====== */
+.services {
+    padding: 100px 40px;
+    background: aliceblue;
+}
+
+.services-judul {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #1B3C53;
+    margin-bottom: 50px;
+}
+
+/* CONTAINER */
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* CARD STYLE */
+.services-card {
+    background: #fff;
+    padding: 30px;
+    width: 330px;
+    min-height: 220px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.25);
+    transition: 0.3s ease;
+    border-top: 5px solid #00bcd4;
+}
+
+.services-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 188, 212, 0.4);
+}
+
+/* TITLE */
+.services-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #00bcd4;
+}
+
+/* PARAGRAPH */
+.services-card p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 900px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-card {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+/* Judul */
+.gallery {
+  padding: 70px 0;
+  background: #fff;
+}
+
+.gallery-judul {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #1B3C53;
+}
+
+/* Layout */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 0 40px;
+}
+
+/* Card */
+.gallery-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.gallery-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(27, 60, 83, 0.3);
+}
+
+/* Image */
+.gallery-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text info */
+.gallery-info {
+  padding: 18px 20px;
+}
+
+.gallery-info h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.gallery-info p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
