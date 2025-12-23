@@ -27,7 +27,7 @@ body {
 
 .header a {
     color: #fff;
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -39,7 +39,7 @@ body {
 .navbar a {
     margin-left: 25px;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     transition: 0.3s;
 }
 

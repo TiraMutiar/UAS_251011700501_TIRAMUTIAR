@@ -18,11 +18,11 @@
       <nav class="navbar">
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
+        <!-- <a href="#services">Services</a> -->
+        <a href="#experiences">Experiences</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
       </nav>
-      <!-- ← INI YANG KURANG -->
     </header>
 
     <section class="home" id="home">
@@ -35,8 +35,8 @@
           <h1>Hello, it's Me!</h1>
           <h3>Welcome to My Portfolio</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod justo nec libero pulvinar, nec interdum erat pretium. Integer fringilla, lacus at cursus placerat, nulla felis lacinia elit, sed luctus nunc enim in justo.
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas et felis vitae orci bibendum tincidunt.
+            Hai! Selamat datang di website portofolio saya. Saya Tira Mutiar, seseorang yang suka belajar hal baru, terutama di dunia teknologi dan desain. Website ini saya buat untuk berbagi sedikit tentang diri saya, pengalaman, serta
+            beberapa karya yang pernah saya kerjakan. Semoga bisa menginspirasi dan bermanfaat buat kamu yang mampir ke sini!
           </p>
           <a href="#about" class="btn">About Me</a>
         </div>
@@ -48,9 +48,8 @@
         <!-- CARD KIRI -->
         <div class="about-card">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod justo nec libero pulvinar, nec interdum erat pretium. Integer fringilla, lacus at cursus placerat, nulla felis lacinia elit, sed luctus nunc enim in justo.
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas et felis vitae orci bibendum tincidunt.
-            <a href="detail.html" class="button">Here's Detail</a>
+            Saya percaya bahwa kreativitas dan teknologi bisa berjalan beriringan untuk menciptakan sesuatu yang bermakna. Melalui website ini, saya ingin menunjukkan perjalanan saya dalam menggabungkan keduanya.
+            <a href="detail.html" class="button">Detail</a>
           </p>
         </div>
 
@@ -61,7 +60,7 @@
       </div>
     </section>
 
-    <section class="services" id="services">
+    <!-- <section class="services" id="services">
       <h2 class="services-judul">My Services</h2>
       <div class="services-container">
         <div class="services-card">
@@ -77,52 +76,231 @@
           <p>I help improve website visibility on search engines through effective SEO strategies.</p>
         </div>
       </div>
+    </section> -->
+
+    <!-- EXPERIENCES -->
+    <section class="experiences" id="experiences">
+      <h2 class="experiences-judul">My Experiences</h2>
+      <div class="experiences-container">
+        <div class="experience-card">
+          <h3>Internship - Digital Marketing Writer</h3>
+          <p>Worked on creating SEO-friendly articles, managed online content, and improved brand engagement through creative writing.</p>
+          <span class="exp-year">2024</span>
+        </div>
+
+        <div class="experience-card">
+          <h3>Freelance Web Developer</h3>
+          <p>Developed small business websites using HTML, CSS, and PHP. Focused on responsive design and simple CMS integration.</p>
+          <span class="exp-year">2023 - Present</span>
+        </div>
+
+        <div class="experience-card">
+          <h3>Locky Charm - Owner</h3>
+          <p>Founded a custom keychain business focused on unique designs and social media marketing to attract young audiences.</p>
+          <span class="exp-year">2022 - Present</span>
+        </div>
+      </div>
     </section>
+
     <section class="gallery" id="gallery">
       <h2 class="gallery-judul">My Gallery</h2>
-      <div class="gallery-container">
-        <div class="gallery-card">
-          <img src="image/yuha.jpg" alt="Gallery Image 1" />
-          <div class="gallery-info">
-            <h3>Project 1</h3>
-            <p>Exploration of color tones & portrait editing style.</p>
-          </div>
-        </div>
 
-        <div class="gallery-card">
-          <img src="image/yuha.jpg" alt="Gallery Image 2" />
-          <div class="gallery-info">
-            <h3>Project 2</h3>
-            <p>Minimalist concept with soft blur background.</p>
-          </div>
-        </div>
+      <!-- Tombol Pilihan Kategori -->
+      <div class="gallery-tabs">
+        <button class="tab-btn active" data-tab="photo">Photo</button>
+        <button class="tab-btn" data-tab="video">Video</button>
+        <button class="tab-btn" data-tab="music">Music</button>
+        <button class="tab-btn" data-tab="project">Project</button>
+        <button class="tab-btn" data-tab="certificates">Certificates</button>
+      </div>
 
+      <!-- PHOTO -->
+      <div class="gallery-container tab-content active" id="photo">
         <div class="gallery-card">
-          <img src="image/yuha.jpg" alt="Gallery Image 3" />
+          <img src="image/yuha.jpg" alt="Gallery Photo 1" />
           <div class="gallery-info">
-            <h3>Project 3</h3>
-            <p>Creative manipulation & surreal photo styling.</p>
+            <h3>Photo 1</h3>
+            <p>Soft tone & portrait style editing.</p>
           </div>
         </div>
         <div class="gallery-card">
-          <img src="image/yuha.jpg" alt="Gallery Image 3" />
+          <img src="image/yuha.jpg" alt="Gallery Photo 2" />
           <div class="gallery-info">
-            <h3>Project 3</h3>
-            <p>Creative manipulation & surreal photo styling.</p>
+            <h3>Photo 2</h3>
+            <p>Bright background and minimal concept.</p>
           </div>
         </div>
         <div class="gallery-card">
-          <img src="image/yuha.jpg" alt="Gallery Image 3" />
+          <img src="image/yuha.jpg" alt="Gallery Photo 2" />
           <div class="gallery-info">
-            <h3>Project 3</h3>
-            <p>Creative manipulation & surreal photo styling.</p>
+            <h3>Photo 2</h3>
+            <p>Bright background and minimal concept.</p>
           </div>
         </div>
+        <div class="gallery-card">
+          <img src="image/yuha.jpg" alt="Gallery Photo 2" />
+          <div class="gallery-info">
+            <h3>Photo 2</h3>
+            <p>Bright background and minimal concept.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="gallery-container tab-content" id="video">
+        <div class="gallery-card">
+          <video controls>
+            <source src="video/sample1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="gallery-info">
+            <h3>Video 1</h3>
+            <p>Short creative visual experiment.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <video controls>
+            <source src="video/sample2.mp4" type="video/mp4" />
+          </video>
+          <div class="gallery-info">
+            <h3>Video 2</h3>
+            <p>Mini project with cinematic tone.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <video controls>
+            <source src="video/sample2.mp4" type="video/mp4" />
+          </video>
+          <div class="gallery-info">
+            <h3>Video 2</h3>
+            <p>Mini project with cinematic tone.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MUSIC -->
+      <div class="gallery-container tab-content" id="music">
+        <div class="gallery-card">
+          <audio controls>
+            <source src="music/sample1.mp3" type="audio/mp3" />
+          </audio>
+          <div class="gallery-info">
+            <h3>Music 1</h3>
+            <p>Lo-fi chill background for work.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <audio controls>
+            <source src="music/sample2.mp3" type="audio/mp3" />
+          </audio>
+          <div class="gallery-info">
+            <h3>Music 2</h3>
+            <p>Instrumental mix for relaxation.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT -->
+      <div class="gallery-container tab-content" id="project">
+        <div class="gallery-card">
+          <img src="image/project1.jpg" alt="Project 1" />
+          <div class="gallery-info">
+            <h3>Website Portfolio</h3>
+            <p>Responsive design using HTML, CSS, JS.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="image/project2.jpg" alt="Project 2" />
+          <div class="gallery-info">
+            <h3>Poster Design</h3>
+            <p>Promotional artwork for Locky Charm.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="image/project2.jpg" alt="Project 2" />
+          <div class="gallery-info">
+            <h3>Poster Design</h3>
+            <p>Promotional artwork for Locky Charm.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="image/project2.jpg" alt="Project 2" />
+          <div class="gallery-info">
+            <h3>Poster Design</h3>
+            <p>Promotional artwork for Locky Charm.</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-container tab-content" id="certificates">
+        <div class="gallery-card">
+          <img src="image/project1.jpg" alt="Project 1" />
+          <div class="gallery-info">
+            <h3>Website Portfolio</h3>
+            <p>Responsive design using HTML, CSS, JS.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="image/project2.jpg" alt="Project 2" />
+          <div class="gallery-info">
+            <h3>Poster Design</h3>
+            <p>Promotional artwork for Locky Charm.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="image/project2.jpg" alt="Project 2" />
+          <div class="gallery-info">
+            <h3>Poster Design</h3>
+            <p>Promotional artwork for Locky Charm.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="image/project2.jpg" alt="Project 2" />
+          <div class="gallery-info">
+            <h3>Poster Design</h3>
+            <p>Promotional artwork for Locky Charm.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <h2 class="contact-judul">Contact Me</h2>
+      <div class="contact-container">
+        <form action="#" method="post" class="contact-form">
+          <div class="input-box">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="input-box">
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="input-box">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
       </div>
     </section>
 
     <footer class="footer">
       <p>&copy; 2024 My Portfolio. All rights reserved.</p>
     </footer>
+
+    <script>
+      const tabs = document.querySelectorAll(".tab-btn");
+      const contents = document.querySelectorAll(".tab-content");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          // Hapus status aktif sebelumnya
+          tabs.forEach((t) => t.classList.remove("active"));
+          contents.forEach((c) => c.classList.remove("active"));
+
+          // Tambahkan status aktif ke tab yang dipilih
+          tab.classList.add("active");
+          document.getElementById(tab.dataset.tab).classList.add("active");
+        });
+      });
+    </script>
   </body>
 </html>

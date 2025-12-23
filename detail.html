@@ -18,33 +18,77 @@
       <nav class="navbar">
         <a href="index.html#home">Home</a>
         <a href="index.html#about">About</a>
-        <a href="index.html#services">Services</a>
+        <!-- <a href="index.html#services">Services</a> -->
+        <a href="index.html#experiences">Experiences</a>
         <a href="index.html#gallery">Gallery</a>
         <a href="index.html#contact">Contact</a>
       </nav>
     </header>
 
-    <section class="about" id="about">
-      <h2 class="about-tittle">About Me</h2>
-      <div class="about-container">
-          <div class="about-img">
-            <img src="image/yuha.jpg" alt="About Photo" />
-          </div>
-        <!-- CARD KIRI -->
-        <div class="about-card">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod justo nec libero pulvinar, nec interdum erat pretium. Integer fringilla, lacus at cursus placerat, nulla felis lacinia elit, sed luctus nunc enim in justo.
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas et felis vitae orci bibendum tincidunt.
-          </p>
+  <section class="about" id="about">
+  <h2 class="about-tittle">About Me</h2>
+
+  <div class="about-container">
+    <!-- KIRI: FOTO + IDENTITAS -->
+    <div class="about-left">
+      <div class="about-card identity-card">
+        <div class="about-img">
+          <img src="image/yuha.jpg" alt="About Photo" />
         </div>
-        <div class="about-card">
+        <div class="identity-info">
+          <h3><span>Tira Mutiar</span></h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod justo nec libero pulvinar, nec interdum erat pretium. Integer fringilla, lacus at cursus placerat, nulla felis lacinia elit, sed luctus nunc enim in justo.
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas et felis vitae orci bibendum tincidunt.
+            Saya adalah mahasiswa jurusan <strong>Sistem Informasi</strong> di Universitas Pamulang (UNPAM).  
+            Saya memiliki minat dalam bidang <strong>web development</strong> dan desain digital.
           </p>
+          <table class="about-table">
+            <tr>
+              <td><strong>Tanggal Lahir</strong></td>
+              <td>: 03 November 2006</td>
+            </tr>
+            <tr>
+              <td><strong>Status</strong></td>
+              <td>: Mahasiswa</td>
+            </tr>
+            <tr>
+              <td><strong>Hobi</strong></td>
+              <td>: Desain, Menulis, dan Fotografi</td>
+            </tr>
+            <tr>
+              <td><strong>Hobi</strong></td>
+              <td>: Desain, Menulis, dan Fotografi</td>
+            </tr>
+            <tr>
+              <td><strong>Hobi</strong></td>
+              <td>: Desain, Menulis, dan Fotografi</td>
+            </tr>
+          </table>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- KANAN: SKILL + PENDIDIKAN -->
+    <div class="about-right">
+      <div class="about-card skill-card">
+        <h4>💻 Skill</h4>
+        <ul class="skill-list">
+          <li><span>HTML</span> <div class="skill-bar"><div class="fill" style="width: 50%;"></div></div></li>
+          <li><span>CSS</span> <div class="skill-bar"><div class="fill" style="width: 50%;"></div></div></li>
+          <li><span>JavaScript</span> <div class="skill-bar"><div class="fill" style="width: 50%;"></div></div></li>
+          <li><span>Design (Canva / Figma)</span> <div class="skill-bar"><div class="fill" style="width: 75%;"></div></div></li>
+        </ul>
+      </div>
+
+      <div class="about-card education-card">
+        <h4>🎓 Pendidikan</h4>
+        <ul class="education-list">
+          <li><strong>Universitas Pamulang</strong> – Sistem Informasi <br /><small>2025 – Sekarang</small></li>
+          <li><strong>SMK Negeri 3 Banjar</strong> – RPL <br /><small>2013 – 2016</small></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
     <footer class="footer">
       <p>&copy; 2024 My Portfolio. All rights reserved.</p>
