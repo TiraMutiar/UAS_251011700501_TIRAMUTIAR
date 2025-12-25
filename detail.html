@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/style3.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
     <title>Website Portfolio</title>
   </head>
 
@@ -18,80 +20,152 @@
       <nav class="navbar">
         <a href="index.html#home">Home</a>
         <a href="index.html#about">About</a>
-        <!-- <a href="index.html#services">Services</a> -->
-        <a href="index.html#experiences">Experiences</a>
         <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#project-gallery">Project</a>
         <a href="index.html#contact">Contact</a>
       </nav>
     </header>
 
-  <section class="about" id="about">
-  <h2 class="about-tittle">About Me</h2>
+    <section class="about" id="about">
+      <h2 class="about-tittle">About Me</h2>
 
-  <div class="about-container">
-    <!-- KIRI: FOTO + IDENTITAS -->
-    <div class="about-left">
-      <div class="about-card identity-card">
-        <div class="about-img">
-          <img src="image/yuha.jpg" alt="About Photo" />
+      <div class="about-container">
+        <!-- KIRI: FOTO + IDENTITAS -->
+        <div class="about-left">
+          <div class="about-card identity-card">
+            <div class="about-img">
+              <img src="image/yuha.jpg" alt="About Photo" />
+            </div>
+            <div class="identity-info">
+              <h3><span>Tira Mutiar</span></h3>
+              <p>Saya adalah mahasiswa jurusan <strong>Sistem Informasi</strong> di Universitas Pamulang (UNPAM). Saya memiliki minat dalam bidang <strong>web development</strong> dan desain digital.</p>
+              <table class="about-table">
+                <tr>
+                  <td><strong>NIM</strong></td>
+                  <td>: 251011700501</td>
+                </tr>
+                <tr>
+                  <td><strong>Tanggal Lahir</strong></td>
+                  <td>: 03 November 2006</td>
+                </tr>
+                <tr>
+                  <td><strong>Status</strong></td>
+                  <td>: Mahasiswa</td>
+                </tr>
+                <tr>
+                  <td><strong>Hobi</strong></td>
+                  <td>: Menyanyi, Design dan Membaca</td>
+                </tr>
+                <tr>
+                  <td><strong>Asal</strong></td>
+                  <td>: Ciamis, Jawa Barat</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
-        <div class="identity-info">
-          <h3><span>Tira Mutiar</span></h3>
-          <p>
-            Saya adalah mahasiswa jurusan <strong>Sistem Informasi</strong> di Universitas Pamulang (UNPAM).  
-            Saya memiliki minat dalam bidang <strong>web development</strong> dan desain digital.
-          </p>
-          <table class="about-table">
-            <tr>
-              <td><strong>Tanggal Lahir</strong></td>
-              <td>: 03 November 2006</td>
-            </tr>
-            <tr>
-              <td><strong>Status</strong></td>
-              <td>: Mahasiswa</td>
-            </tr>
-            <tr>
-              <td><strong>Hobi</strong></td>
-              <td>: Desain, Menulis, dan Fotografi</td>
-            </tr>
-            <tr>
-              <td><strong>Hobi</strong></td>
-              <td>: Desain, Menulis, dan Fotografi</td>
-            </tr>
-            <tr>
-              <td><strong>Hobi</strong></td>
-              <td>: Desain, Menulis, dan Fotografi</td>
-            </tr>
-          </table>
+
+        <!-- KANAN: SKILL + PENDIDIKAN -->
+        <div class="about-right">
+          <div class="about-card skill-card">
+            <h4>💻 Skill</h4>
+            <ul class="skill-list">
+              <li>
+                <span>HTML</span>
+                <div class="skill-bar"><div class="fill" style="width: 50%"></div></div>
+              </li>
+              <li>
+                <span>CSS</span>
+                <div class="skill-bar">
+                  <div class="fill" style="width: 50%"></div>
+                </div>
+              </li>
+              <li>
+                <span>JavaScript</span>
+                <div class="skill-bar">
+                  <div class="fill" style="width: 50%"></div>
+                </div>
+              </li>
+              <li>
+                <span>Design (Canva / Figma)</span>
+                <div class="skill-bar">
+                  <div class="fill" style="width: 60%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-card education-card">
+            <h4>🎓 Pendidikan</h4>
+            <ul class="education-list">
+              <li><strong>Universitas Pamulang</strong> – Sistem Informasi <br /><small>2025 – Sekarang</small></li>
+              <li><strong>SMK Negeri 3 Banjar</strong> – RPL <br /><small>2013 – 2016</small></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- KANAN: SKILL + PENDIDIKAN -->
-    <div class="about-right">
-      <div class="about-card skill-card">
-        <h4>💻 Skill</h4>
-        <ul class="skill-list">
-          <li><span>HTML</span> <div class="skill-bar"><div class="fill" style="width: 50%;"></div></div></li>
-          <li><span>CSS</span> <div class="skill-bar"><div class="fill" style="width: 50%;"></div></div></li>
-          <li><span>JavaScript</span> <div class="skill-bar"><div class="fill" style="width: 50%;"></div></div></li>
-          <li><span>Design (Canva / Figma)</span> <div class="skill-bar"><div class="fill" style="width: 75%;"></div></div></li>
-        </ul>
-      </div>
+    <!-- EXPERIENCES -->
+    <section class="experiences" id="experiences">
+      <h2 class="experiences-judul">My Experiences</h2>
 
-      <div class="about-card education-card">
-        <h4>🎓 Pendidikan</h4>
-        <ul class="education-list">
-          <li><strong>Universitas Pamulang</strong> – Sistem Informasi <br /><small>2025 – Sekarang</small></li>
-          <li><strong>SMK Negeri 3 Banjar</strong> – RPL <br /><small>2013 – 2016</small></li>
-        </ul>
+      <div class="experiences-container">
+        <div class="experience-card">
+          <h3>Internship - Digital Marketing Writer</h3>
+          <p>Worked on creating SEO-friendly articles, managed online content, and improved brand engagement through creative writing.</p>
+          <span class="exp-year">2024</span>
+        </div>
+
+        <div class="experience-card">
+          <h3>Freelance Web Developer</h3>
+          <p>Developed small business websites using HTML, CSS, and PHP. Focused on responsive design and simple CMS integration.</p>
+          <span class="exp-year">2023 - Present</span>
+        </div>
+
+        <div class="experience-card">
+          <h3>Locky Charm - Owner</h3>
+          <p>Founded a custom keychain business focused on unique designs and social media marketing to attract young audiences.</p>
+          <span class="exp-year">2022 - Present</span>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <footer class="footer">
-      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+      <div class="footer-content">
+        <!-- Kiri: Logo / Nama -->
+        <div class="footer-brand">
+          <h2>My Portfolio</h2>
+          <p>Passionate about design, creativity, and technology — turning ideas into visuals and code.</p>
+        </div>
+
+        <!-- Tengah: Info Kontak -->
+        <div class="footer-info">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> Tangerang Selatan, Banten, Indonesia</li>
+            <li><i class="fa-solid fa-phone"></i> +62 812-3456-7890</li>
+            <li><i class="fa-solid fa-envelope"></i> Tiramutiar5@gmail.com</li>
+            <li><i class="fa-solid fa-clock"></i> Mon - Fri: 09.00 - 18.00</li>
+          </ul>
+        </div>
+
+        <!-- Kanan: Social Media -->
+        <div class="footer-social">
+          <h4>Follow Me</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <p class="footer-quote">“Creativity is intelligence having fun.”</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>

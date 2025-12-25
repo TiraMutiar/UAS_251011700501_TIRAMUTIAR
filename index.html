@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/style2.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
     <title>Website Portfolio</title>
   </head>
 
@@ -18,9 +21,8 @@
       <nav class="navbar">
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <!-- <a href="#services">Services</a> -->
-        <a href="#experiences">Experiences</a>
         <a href="#gallery">Gallery</a>
+        <a href="#project-gallery">Project</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -60,48 +62,7 @@
       </div>
     </section>
 
-    <!-- <section class="services" id="services">
-      <h2 class="services-judul">My Services</h2>
-      <div class="services-container">
-        <div class="services-card">
-          <h3>Web Development</h3>
-          <p>I create responsive and user-friendly websites using the latest web technologies.</p>
-        </div>
-        <div class="services-card">
-          <h3>Graphic Design</h3>
-          <p>I design visually appealing graphics for various purposes, including logos, posters, and social media content.</p>
-        </div>
-        <div class="services-card">
-          <h3>SEO Optimization</h3>
-          <p>I help improve website visibility on search engines through effective SEO strategies.</p>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- EXPERIENCES -->
-    <section class="experiences" id="experiences">
-      <h2 class="experiences-judul">My Experiences</h2>
-      <div class="experiences-container">
-        <div class="experience-card">
-          <h3>Internship - Digital Marketing Writer</h3>
-          <p>Worked on creating SEO-friendly articles, managed online content, and improved brand engagement through creative writing.</p>
-          <span class="exp-year">2024</span>
-        </div>
-
-        <div class="experience-card">
-          <h3>Freelance Web Developer</h3>
-          <p>Developed small business websites using HTML, CSS, and PHP. Focused on responsive design and simple CMS integration.</p>
-          <span class="exp-year">2023 - Present</span>
-        </div>
-
-        <div class="experience-card">
-          <h3>Locky Charm - Owner</h3>
-          <p>Founded a custom keychain business focused on unique designs and social media marketing to attract young audiences.</p>
-          <span class="exp-year">2022 - Present</span>
-        </div>
-      </div>
-    </section>
-
+    <!-- GALLERY -->
     <section class="gallery" id="gallery">
       <h2 class="gallery-judul">My Gallery</h2>
 
@@ -110,7 +71,7 @@
         <button class="tab-btn active" data-tab="photo">Photo</button>
         <button class="tab-btn" data-tab="video">Video</button>
         <button class="tab-btn" data-tab="music">Music</button>
-        <button class="tab-btn" data-tab="project">Project</button>
+        <!-- <button class="tab-btn" data-tab="project">Project</button> -->
         <button class="tab-btn" data-tab="certificates">Certificates</button>
       </div>
 
@@ -200,64 +161,126 @@
         </div>
       </div>
 
-      <!-- PROJECT -->
-      <div class="gallery-container tab-content" id="project">
+      <!-- CERTIFICATES -->
+      <div class="gallery-container tab-content" id="certificates">
         <div class="gallery-card">
-          <img src="image/project1.jpg" alt="Project 1" />
+          <img src="image/project1.jpg" alt="certificates 1" />
           <div class="gallery-info">
             <h3>Website Portfolio</h3>
             <p>Responsive design using HTML, CSS, JS.</p>
           </div>
         </div>
         <div class="gallery-card">
-          <img src="image/project2.jpg" alt="Project 2" />
+          <img src="image/project2.jpg" alt="certificates 2" />
           <div class="gallery-info">
             <h3>Poster Design</h3>
             <p>Promotional artwork for Locky Charm.</p>
           </div>
         </div>
         <div class="gallery-card">
-          <img src="image/project2.jpg" alt="Project 2" />
+          <img src="image/project2.jpg" alt="certificates 3" />
           <div class="gallery-info">
             <h3>Poster Design</h3>
             <p>Promotional artwork for Locky Charm.</p>
           </div>
         </div>
         <div class="gallery-card">
-          <img src="image/project2.jpg" alt="Project 2" />
+          <img src="image/project2.jpg" alt="certificates 4" />
           <div class="gallery-info">
             <h3>Poster Design</h3>
             <p>Promotional artwork for Locky Charm.</p>
           </div>
         </div>
       </div>
-      <div class="gallery-container tab-content" id="certificates">
+    </section>
+
+    <!-- PROJECT GALLERY -->
+    <section class="project-gallery" id="project-gallery">
+      <h2 class="gallery-judul">My Projects</h2>
+
+      <!-- Tombol kategori project -->
+      <div class="gallery-tabs">
+        <button class="tab-btn active" data-tab="web">Web</button>
+        <button class="tab-btn" data-tab="design">Design</button>
+        <button class="tab-btn" data-tab="poster">Poster</button>
+        <button class="tab-btn" data-tab="artwork">Artwork</button>
+      </div>
+
+      <!-- Kategori Web -->
+      <div class="gallery-container tab-content active" id="web">
         <div class="gallery-card">
-          <img src="image/project1.jpg" alt="Project 1" />
+          <img src="image/project-web1.jpg" alt="Website Project 1" />
           <div class="gallery-info">
-            <h3>Website Portfolio</h3>
-            <p>Responsive design using HTML, CSS, JS.</p>
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal website using HTML, CSS, and JS.</p>
           </div>
         </div>
         <div class="gallery-card">
-          <img src="image/project2.jpg" alt="Project 2" />
+          <img src="image/project-web2.jpg" alt="Website Project 2" />
           <div class="gallery-info">
-            <h3>Poster Design</h3>
-            <p>Promotional artwork for Locky Charm.</p>
+            <h3>Online Store</h3>
+            <p>E-commerce front-end with product grid and cart mockup.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kategori Design -->
+      <div class="gallery-container tab-content" id="design">
+        <div class="gallery-card">
+          <img src="image/design1.jpg" alt="Design Project 1" />
+          <div class="gallery-info">
+            <h3>Brand Logo</h3>
+            <p>Minimalist logo concept for Locky Charm.</p>
           </div>
         </div>
         <div class="gallery-card">
-          <img src="image/project2.jpg" alt="Project 2" />
+          <img src="image/design2.jpg" alt="Design Project 2" />
           <div class="gallery-info">
-            <h3>Poster Design</h3>
-            <p>Promotional artwork for Locky Charm.</p>
+            <h3>Social Media Layout</h3>
+            <p>Instagram carousel template for promotion.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kategori Poster -->
+      <div class="gallery-container tab-content" id="poster">
+        <div class="gallery-card">
+          <img src="image/poster1.jpg" alt="Poster Project 1" />
+          <div class="gallery-info">
+            <h3>Event Poster</h3>
+            <p>Modern layout for creative event advertisement.</p>
           </div>
         </div>
         <div class="gallery-card">
-          <img src="image/project2.jpg" alt="Project 2" />
+          <img src="image/poster1.jpg" alt="Poster Project 1" />
           <div class="gallery-info">
-            <h3>Poster Design</h3>
-            <p>Promotional artwork for Locky Charm.</p>
+            <h3>Event Poster</h3>
+            <p>Modern layout for creative event advertisement.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="image/poster1.jpg" alt="Poster Project 1" />
+          <div class="gallery-info">
+            <h3>Event Poster</h3>
+            <p>Modern layout for creative event advertisement.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kategori Artwork -->
+      <div class="gallery-container tab-content" id="artwork">
+        <div class="gallery-card">
+          <img src="image/artwork1.jpg" alt="Artwork 1" />
+          <div class="gallery-info">
+            <h3>Digital Illustration</h3>
+            <p>Soft-tone character design experiment.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="image/artwork2.jpg" alt="Artwork 2" />
+          <div class="gallery-info">
+            <h3>Fanart Series</h3>
+            <p>Messy-style brushwork with funky tone.</p>
           </div>
         </div>
       </div>
@@ -283,22 +306,72 @@
     </section>
 
     <footer class="footer">
-      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+      <div class="footer-content">
+        <!-- Kiri: Logo / Nama -->
+        <div class="footer-brand">
+          <h2>My Portfolio</h2>
+          <p>Passionate about design, creativity, and technology — turning ideas into visuals and code.</p>
+        </div>
+
+        <!-- Tengah: Info Kontak -->
+        <div class="footer-info">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> Tangerang Selatan, Banten, Indonesia</li>
+            <li><i class="fa-solid fa-phone"></i> +62 812-3456-7890</li>
+            <li><i class="fa-solid fa-envelope"></i> Tiramutiar5@gmail.com</li>
+            <li><i class="fa-solid fa-clock"></i> Mon - Fri: 09.00 - 18.00</li>
+          </ul>
+        </div>
+
+        <!-- Kanan: Social Media -->
+        <div class="footer-social">
+          <h4>Follow Me</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <p class="footer-quote">“Creativity is intelligence having fun.”</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+      </div>
     </footer>
 
     <script>
-      const tabs = document.querySelectorAll(".tab-btn");
-      const contents = document.querySelectorAll(".tab-content");
+      // === SCRIPT UNTUK GALLERY UTAMA ===
+      const galleryTabs = document.querySelectorAll("#gallery .tab-btn");
+      const galleryContents = document.querySelectorAll("#gallery .tab-content");
 
-      tabs.forEach((tab) => {
+      galleryTabs.forEach((tab) => {
         tab.addEventListener("click", () => {
-          // Hapus status aktif sebelumnya
-          tabs.forEach((t) => t.classList.remove("active"));
-          contents.forEach((c) => c.classList.remove("active"));
+          // Hapus aktif dari semua tab & konten
+          galleryTabs.forEach((t) => t.classList.remove("active"));
+          galleryContents.forEach((c) => c.classList.remove("active"));
 
-          // Tambahkan status aktif ke tab yang dipilih
+          // Tambahkan aktif ke tab & konten yang dipilih
           tab.classList.add("active");
-          document.getElementById(tab.dataset.tab).classList.add("active");
+          document.querySelector(`#gallery #${tab.dataset.tab}`).classList.add("active");
+        });
+      });
+
+      // === SCRIPT UNTUK PROJECT GALLERY ===
+      const projectTabs = document.querySelectorAll("#project-gallery .tab-btn");
+      const projectContents = document.querySelectorAll("#project-gallery .tab-content");
+
+      projectTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          // Hapus aktif dari semua tab & konten di section ini
+          projectTabs.forEach((t) => t.classList.remove("active"));
+          projectContents.forEach((c) => c.classList.remove("active"));
+
+          // Tambahkan aktif ke tab & konten yang dipilih
+          tab.classList.add("active");
+          document.querySelector(`#project-gallery #${tab.dataset.tab}`).classList.add("active");
         });
       });
     </script>

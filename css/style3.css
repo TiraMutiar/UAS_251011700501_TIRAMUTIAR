@@ -12,6 +12,17 @@
   margin-bottom: 50px;
 }
 
+.about-tittle::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #00bcd4;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 6px;
+  opacity: 0.5;
+}
+
 /* === LAYOUT UTAMA === */
 .about-container {
   max-width: 1200px;
@@ -176,5 +187,130 @@
   .about-left, .about-right {
     width: 100%;
     max-width: 600px;
+  }
+}
+
+/* === EXPERIENCES SECTION === */
+.experiences {
+  background: #fff;
+  padding-bottom: 70px;
+  font-family: "Poppins", sans-serif;
+}
+
+.experiences-judul {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  color: #1b3c53;
+  margin-bottom: 50px;
+  letter-spacing: 0.6px;
+  position: relative;
+}
+
+.experiences-judul::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #00bcd4;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 6px;
+  opacity: 0.5;
+}
+
+/* === CONTAINER === */
+.experiences-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* === CARD STYLE === */
+.experience-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 188, 212, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 188, 212, 0.18);
+  padding: 40px 32px;
+  width: 320px;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* efek hover lembut */
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 188, 212, 0.25);
+  background: linear-gradient(180deg, #ffffff 0%, #f7feff 100%);
+}
+
+/* judul */
+.experience-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1b3c53;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.experience-card:hover h3 {
+  color: #00a8bd;
+}
+
+/* deskripsi */
+.experience-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+/* tahun / badge */
+.exp-year {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #00bcd4;
+  background: #e6f8fa;
+  padding: 7px 15px;
+  border-radius: 30px;
+  box-shadow: inset 0 0 6px rgba(0, 188, 212, 0.2);
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover .exp-year {
+  background: #d9f4f7;
+}
+
+/* efek dekorasi bayangan di pojok kiri atas */
+.experience-card::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle at center, rgba(0, 188, 212, 0.12), transparent 70%);
+  border-radius: 50%;
+  transition: 0.4s ease;
+}
+
+.experience-card:hover::before {
+  transform: scale(1.2);
+  opacity: 0.9;
+}
+
+/* responsif */
+@media (max-width: 768px) {
+  .experience-card {
+    width: 100%;
+    max-width: 500px;
   }
 }
