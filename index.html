@@ -21,10 +21,10 @@
 
       <nav class="navbar">
         <a href="#home">Home</a>
-        <a href="detail.html#about">About</a>
-        <a href="media.html#gallery">Gallery</a>
-        <a href="project.html#project-gallery">Project</a>
-        <a href="contact.html#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#project-gallery">Project</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
@@ -62,6 +62,216 @@
       </div>
     </section>
 
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+      <h2 class="gallery-judul">My Gallery</h2>
+
+      <!-- Pilihan -->
+      <div class="gallery-tabs">
+        <button class="tab-btn active" data-tab="photo">Photo</button>
+        <button class="tab-btn" data-tab="video">Video</button>
+        <button class="tab-btn" data-tab="music">Music</button>
+        <button class="tab-btn" data-tab="certificates">Certificates</button>
+      </div>
+
+      <!-- Photo -->
+      <div class="gallery-container tab-content active" id="photo">
+        <div class="gallery-card">
+          <img src="image/ph.jpg" alt="Gallery Photo 1" />
+          <div class="gallery-info">
+            <h3>Photo 1</h3>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="image/lost.jpg" alt="Gallery Photo 2" />
+          <div class="gallery-info">
+            <h3>Photo 2</h3>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="image/about.jpg" alt="Gallery Photo 2" />
+          <div class="gallery-info">
+            <h3>Photo 3</h3>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="image/star.jpg" alt="Gallery Photo 2" />
+          <div class="gallery-info">
+            <h3>Photo 4</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video -->
+      <div class="gallery-container tab-content" id="video">
+        <div class="gallery-card">
+          <video controls>
+            <source src="video/vid1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="gallery-info">
+            <h3>Video 1</h3>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <video controls>
+            <source src="video/vid2.mp4" type="video/mp4" />
+          </video>
+          <div class="gallery-info">
+            <h3>Video 2</h3>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <video controls>
+            <source src="video/vid3.mp4" type="video/mp4" />
+          </video>
+          <div class="gallery-info">
+            <h3>Video 3</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Music -->
+      <div class="gallery-container tab-content" id="music">
+        <div class="gallery-card">
+          <audio controls>
+            <source src="image/GO! - CORTIS.mp3" type="audio/mp3" />
+          </audio>
+          <div class="gallery-info">
+            <h3>Music 1</h3>
+            <p>GO! by CORTIS.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <audio controls>
+            <source src="image/What You Want - CORTIS.mp3" type="audio/mp3" />
+          </audio>
+          <div class="gallery-info">
+            <h3>Music 2</h3>
+            <p>What You Want by CORTIS.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificates -->
+      <div class="gallery-container tab-content" id="certificates">
+        <div class="gallery-card">
+          <img src="image/sertif1.png" alt="certificates 1" />
+          <div class="gallery-info">
+            <h3>Learning</h3>
+            <p>Belajar terkait Dasar Pemrograman</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="image/sertif2.png" alt="certificates 2" />
+          <div class="gallery-info">
+            <h3>Learning</h3>
+            <p>Belajar terkait dasar logika (101)</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="image/sertif3.png" alt="certificates 3" />
+          <div class="gallery-info">
+            <h3>Learning</h3>
+            <p>Belajar visualisasi data</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="image/sertif4.png" alt="certificates 4" />
+          <div class="gallery-info">
+            <h3>PKL</h3>
+            <p>Sertifikasi dari sekolah terkait PKL</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project -->
+    <section class="project-gallery" id="project-gallery">
+      <h2 class="gallery-judul">My Projects</h2>
+
+      <!-- Kategori -->
+      <div class="gallery-tabs">
+        <button class="tab-btn active" data-tab="web">Web</button>
+        <button class="tab-btn" data-tab="design">Design</button>
+      </div>
+
+      <!-- Kategori Web -->
+      <div class="gallery-container tab-content active" id="web">
+        <div class="gallery-card">
+          <img src="image/porto.png" alt="Website Project 1" />
+          <div class="gallery-info">
+            <h3>Portfolio Website</h3>
+            <p>Membuat personal website menggunakan HTML, CSS dan JS.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="image/Pengaduan.png" alt="Website Project 2" />
+          <div class="gallery-info">
+            <h3>Pangaduan Masyarakat Website</h3>
+            <p>Website untuk pengaduan masyarakat.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="image/Porto2.png" alt="Website Project 2" />
+          <div class="gallery-info">
+            <h3>Porto Pertemuan 20</h3>
+            <p>Membuat portofolio pertemuan 20.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kategori Design -->
+      <div class="gallery-container tab-content" id="design">
+        <div class="gallery-card">
+          <img src="image/UI.png" alt="Design Project 1" />
+          <div class="gallery-info">
+            <h3>UI Apk berbasis android</h3>
+            <p>Membuat UI Aplikasi tabungan menggunakan Figma.</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <img src="image/Second Ui.png" alt="Design Project 2" />
+          <div class="gallery-info">
+            <h3>UI Apk Pemesanan</h3>
+            <p>Membuat UI Aplikasi pemesanan menggunakan Figma.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="contact-judul">Contact Me</h2>
+      <div class="contact-container">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Tangerang Selatan, Indonesia</p>
+          <p><i class="fas fa-envelope"></i> tiramutiar5@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+          <div class="social-icons">
+            <a href="https://instagram.com/mutiarrtr"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/TiraMutiar"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form action="#" method="post" class="contact-form">
+          <div class="input-box">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="input-box">
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="input-box">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-brand">
@@ -96,6 +306,40 @@
       <div class="footer-bottom">
         <p>&copy; 2025 My Portfolio. All rights reserved.</p>
       </div>
+
+      <script>
+        // SCRIPT GALLERY
+        const galleryTabs = document.querySelectorAll("#gallery .tab-btn");
+        const galleryContents = document.querySelectorAll("#gallery .tab-content");
+
+        galleryTabs.forEach((tab) => {
+          tab.addEventListener("click", () => {
+            // Hapus aktif dari semua tab & konten
+            galleryTabs.forEach((t) => t.classList.remove("active"));
+            galleryContents.forEach((c) => c.classList.remove("active"));
+
+            // Tambahkan aktif ke tab & konten yang dipilih
+            tab.classList.add("active");
+            document.querySelector(`#gallery #${tab.dataset.tab}`).classList.add("active");
+          });
+        });
+
+        // SCRIPT PROJECT
+        const projectTabs = document.querySelectorAll("#project-gallery .tab-btn");
+        const projectContents = document.querySelectorAll("#project-gallery .tab-content");
+
+        projectTabs.forEach((tab) => {
+          tab.addEventListener("click", () => {
+            // Hapus aktif dari semua tab & konten di section ini
+            projectTabs.forEach((t) => t.classList.remove("active"));
+            projectContents.forEach((c) => c.classList.remove("active"));
+
+            // Tambahkan aktif ke tab & konten yang dipilih
+            tab.classList.add("active");
+            document.querySelector(`#project-gallery #${tab.dataset.tab}`).classList.add("active");
+          });
+        });
+      </script>
     </footer>
   </body>
 </html>
